@@ -1,0 +1,32 @@
+.not-center {
+    text-align: initial !important;
+}
+
+.title{
+    color: #fff!important;
+}
+
+.subtitle {
+    color: #fff!important;
+}
+
+strong {
+    color:#ff8000!important;
+}
+
+@font-face {
+    font-family: "Sans Forgetica";
+    src: url(https://www.thejeterlp.dev/css/SansForgetica-Regular.otf);
+}
+
+.hero.is-primary.is-bold#particles-js {
+    background: transparent;
+}
+/* Particles JS */
+
+#particles-js canvas {
+    position: fixed;
+    height: 100vh;
+    z-index: -1;
+    background-image: linear-gradient(141deg, #090808 0%, #222 71%, #312d2c 100%);
+}
