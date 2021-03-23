@@ -1,3 +1,5 @@
+<?php
+?>
 <div class="not-center">
 <h1>Legal Disclosure</h1>
 Information in accordance with Section 5 TMG
@@ -15,3 +17,5 @@ works subject to copyright protection on our web pages requires the prior consen
 Individual reproductions of a work are only allowed for private use. 
 The materials from these pages are copyrighted and any unauthorized use may violate copyright laws.
 </div>
+<?php
+?>
