@@ -16,11 +16,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    particlesJS.load('particles-js', 'https://www.thejeterlp.dev/js/particlesjs-config.json', function () {
-        return console.log('Particles.js config loaded');
-    });
+window.cookieconsent.initialise({
+    "palette": {
+        "popup": {"background": "#3c404d", "text": "#d6d6d6"},
+        "button": {"background": "#8769c3"}},
+    "theme": "edgeless",
+    "position": "top",
+    "content": {
+        "message": "Diese Webseite verwendet Cookies, um Ihnen ein angenehmeres Surfen zu ermöglichen.",
+        "dismiss": "Akzeptieren",
+        "link": "Mehr erfahren",
+        "href": "/datenschutz"
+    }
 });
+
+
 
 
 

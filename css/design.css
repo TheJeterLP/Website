@@ -1,32 +1,46 @@
+/* Navbar */
+.navbar {
+   height: 7.00rem !important; 
+}
+
+.navbar-item img {
+    max-height: 5.75rem !important; 
+}
+
+.navbar-item, .navbar-link {
+    padding: .5rem 1.75rem !important;
+}
+
+/* Footer */
+.hero-foot {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #232323
+}
+
+/* Cookie Consent https://www.osano.com/cookieconsent/documentation/about-cookie-consent/ */
+.cc-compliance a {
+    color: white !important;
+}
+
+/* Generelles Design */
+a {
+    color: #8769c3 !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* Funktionsklassen */
+.is-centered {
+    text-align: center !important;
+}
+
 .not-center {
     text-align: initial !important;
 }
 
-.title{
-    color: #fff!important;
-}
-
-.subtitle {
-    color: #fff!important;
-}
-
-strong {
-    color:#ff8000!important;
-}
-
+/* Schriftarten */
 @font-face {
     font-family: "Sans Forgetica";
-    src: url(https://www.thejeterlp.dev/css/SansForgetica-Regular.otf);
-}
-
-.hero.is-primary.is-bold#particles-js {
-    background: transparent;
-}
-/* Particles JS */
-
-#particles-js canvas {
-    position: fixed;
-    height: 100vh;
-    z-index: -1;
-    background-image: linear-gradient(141deg, #090808 0%, #222 71%, #312d2c 100%);
+    src: url(https://kvw.jp-motortechnik.de/css/SansForgetica-Regular.otf);
 }

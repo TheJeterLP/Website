@@ -6,4 +6,7 @@ $files['impressum'] = 'impressum.php';
 $files['imprint'] = 'impressum.php';
 $files['datenschutz'] = 'datenschutz.php';
 $files['data-protection'] = 'datenschutz.php';
+$files['notfound'] = 'notfound.php';
+$files['nopermission'] = 'nopermission.php';
+$files['partner'] = 'partner.php';
 ?>

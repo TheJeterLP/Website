@@ -2,8 +2,7 @@
 
 $a = array();
 $a['filename'] = 'impressum.php';
-$a['title'] = 'Imprint';
-$a['header-footer'] = true;
+$a['title'] = 'Impressum';
 $a['data'] = array();
 
 return $a;

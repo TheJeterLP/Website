@@ -1,123 +1,145 @@
 <div class="not-center">
-<H1> Privacy Policy </H1>
-<P> How we handle your personal data is explained in this data protection declaration. Applicable data protection law, in particular the General Data Protection Regulation (GDPR), applies. With the exception of the service providers and third-party providers that we name in this data protection declaration, we do not pass on any data to third parties. If you have any questions, please do not hesitate to contact us. </P>
-<H2> Content </H2>
-<UL>
-<LI class=first><A href="#verantwortlicher"> Responsible </A> 
-<LI><A href="#allgemeine-informationen"> General information </A> 
-<LI><A href="#datenverarbeitung-beim-aufruf-der-webseite"> Data processing when calling up the website </A> 
-<LI><A href="#cookies-zaehlpixel-und-mobile-identifier"> Cookies, tracking pixels and mobile identifiers </A> 
-<LI><A href="#kontaktaufnahme"> Contacting us </A> 
-<LI><A href="#affiliate-links"> Affiliate links </A> 
-<LI><A href="#weitere-drittdienste"> Other third-party services </A> 
-<LI><A href="#profile-in-sozialen-netzwerken"> Profiles in social networks </A> 
-<LI class=last><A href="#rechte-betroffener-personen"> Rights of data subjects </A> </LI></UL>
-<H2 id=verantwortlicher> Responsible </H2>
-<P> Responsible for data processing is </P>
-<P> Joey Peter <BR> Hauptstrasse 15A <BR> 65597 Hünfelden <BR>Germany</P>
-<H2 id=allgemeine-informationen> General information </H2>
-<P><STRONG> Provision of data </STRONG></P>
-<P> In order to use our website, it is usually not required by law or contract to provide personal data. If the provision of data is necessary for the conclusion of a contract or the user is obliged to provide personal data, we will inform you of this fact and the consequences of not providing it in this data protection declaration. </P>
-<P><STRONG> Data transfer to third countries </STRONG></P>
-<P> It is possible that we use service providers and third-party providers who are based in countries outside the European Union and the European Economic Area. The transfer of personal data to such third countries takes place on the basis of an adequacy decision by the European Commission (Art. 45 GDPR) or we have provided suitable guarantees to ensure data protection (Art. 46 GDPR). If there is an adequacy decision by the European Commission for the transfer of data to a third country, we will point this out in this data protection declaration. In addition, users can obtain a copy of the appropriate guarantees from us, unless this is already contained in the data protection declarations of the service providers or third-party providers. </P>
-<P><STRONG> Automated decision-making </STRONG></P>
-<P> Should we carry out automated decision-making including profiling, we will inform you in this data protection declaration about this fact, about the logic involved and the scope and intended effects of such processing. Otherwise, automated decision-making does not take place. </P>
-<P><STRONG> Processing for other purposes </STRONG></P>
-<P> Data are generally only processed for the purposes for which they were collected. If, as an exception, they should be processed for other purposes, we will inform you about these other purposes before further processing and provide all other relevant information (Art. 13 Para. 3 GDPR). </P>
-<H2 id=datenverarbeitung-beim-aufruf-der-webseite> Data processing when calling up the website </H2>
-<P> Each time our website is accessed, the user's browser transmits various data. For the duration of your visit to the website, the following data is processed and stored in log files even after the connection has ended: </P>
-<UL>
-<LI> Browser type and version used 
-<LI> Operating system 
-<LI> Pages and files accessed 
-<LI> Amount of data transferred 
-<LI> Date and time of the call 
-<LI> Provider of the user 
-<LI> IP address 
-<LI> Referrer URL </LI></UL>
-<P> The processing of this data is necessary in order to be able to deliver the website to the user and to optimize it for his end device. The storage in log files serves to improve the security of our website (e.g. protection against DDOS attacks). </P>
-<P> The legal basis for the processing is Art. 6 Para. 1 Sub-Paragraph 1 Letter f) GDPR. Our legitimate interest lies in the provision of the website and the improvement of website security. Log files are automatically deleted after 1 days. </P>
-<H2 id=cookies-zaehlpixel-und-mobile-identifier> Cookies, tracking pixels and mobile identifiers </H2>
-<P> We use technologies on our website to recognize the device used. These can be cookies, tracking pixels and / or mobile identifiers. </P>
-<P> A terminal device can basically be recognized for different purposes. It may be necessary to provide functions on our website, for example to provide a shopping cart. In addition, the technologies mentioned can be used to understand the behavior of users on the site, for example for advertising purposes. Which technologies we use in detail and for which purposes are described separately in this privacy policy. </P>
-<P> For a better understanding, we explain in general how cookies, tracking pixels and mobile identifiers work: </P>
-<UL>
-<LI>
-<P> Cookies are small text files that contain certain information and are stored on the user's device. In most cases, it is an identification number that is assigned to an end device (cookie ID). </P>
-<LI>
-<P> A tracking pixel is a transparent graphic file that is integrated on a page and enables a log file analysis. </P>
-<LI>
-<P> A mobile identifier is a unique number (Mobile ID) that is stored on a mobile device and can be read out on a website. </P></LI></UL>
-<P> Cookies may be required for our website to function properly. The legal basis for the use of such cookies is Art. 6 Para. 1 Subparagraph 1 Letter f) GDPR. Our legitimate interest lies in the provision of the functions of our website. </P>
-<P> We use cookies that are not required for the operation of our website in order to make our offer more user-friendly or to be able to understand the use of our website. The legal basis here depends on whether the consent of the user is to be obtained or whether we can invoke a legitimate interest. The user can revoke a given consent at any time through the settings in his browser. </P>
-<P> The user can prevent and object to the processing of data with the help of cookies by making the appropriate settings in his browser. In the event of an objection, not all functions of our website may be available. We provide separate information in this data protection declaration about further options for objecting to the processing of personal data by cookies. If necessary, we provide links with which an objection can be declared. These are labeled with "Opt-Out". </P>
-<H2 id=kontaktaufnahme> Contact </H2>
-<P> If you contact us, we process the details of the user, date and time for the purpose of processing the request, including any queries. </P>
-<P> The legal basis for data processing is Art. 6 Para. 1 Sub-Paragraph 1 Letter f) GDPR. Our legitimate interest consists in answering our users' inquiries. Additional legal basis is Art. 6 Para. 1 Subpara. 1 Letter b) GDPR, if the processing is necessary for the performance of a contract or for the implementation of pre-contractual measures. </P>
-<P> The data will be deleted as soon as the request including any queries has been answered. We check at regular intervals, but at least every two years, whether any data that has arisen in connection with making contact needs to be deleted. </P>
-<H2 id=affiliate-links> Affiliate links </H2>
-<P> We participate in affiliate programs. This means that we set links to partner companies. If a user clicks on such an affiliate link, we may receive a commission. In this case, it is necessary to assign the activities of the user on the partner company's website to our offer. This is done through the link or in another way, for example through cookies. The resulting data will be processed exclusively for this purpose. </P>
-<P> Insofar as we obtain the consent of the user, Art. 6 Paragraph 1 Subparagraph 1 Letter a) GDPR is the legal basis for the processing. The legal basis for the rest is Art. 6 para. 1 subpara. 1 letter f) GDPR. Our legitimate interest lies in the financing of our offer. </P>
-<P> The processed data will be deleted as soon as they are no longer required to settle the commission. </P>
-<H2 id=weitere-drittdienste> Other third-party services </H2>
-<P></P>
-<P><STRONG> Google Adsense </STRONG></P>
-<P> We use Google AdSense. Provider: Google Ireland Ltd., Google Building Gordon House, 4 Barrow St, Dublin, D04 E5W5, Ireland. </P>
-<P> We place personalized advertisements via Google Adsense. Google uses cookies and tracking pixels in order to analyze the behavior of users and to be able to select suitable advertising. Among other things, the visits to our website and other websites that use AdSense are evaluated and assigned to a user ID. The data will not be merged with other user data stored by Google. </P>
-<P> Insofar as we obtain the consent of the user, the processing takes place on the legal basis of Art. 6 para. 1 subpara. 1 letter a) GDPR. Otherwise, it is based on Art. 6 Para. 1 Subpara. 1 Letter f) GDPR. Our legitimate interest lies in the delivery of interest-based advertising. </P>
-<P> Users can object to the use of data by Google for personalized advertising at any time with the following opt-out. </P>
-<P><A href="https://adssettings.google.com/"> Opt-Out </A></P>
-<P><A href="https://policies.google.com/privacy?hl=de"> Google AdSense privacy policy </A></P>
-<P><STRONG> jQuery CDN </STRONG></P>
-<P> We use the content delivery network (CDN) jQuery CDN, which is operated by the jQuery Foundation. Technically, the CDN is provided byStackPath LLC, 2021 McKinney Ave. Suite 1100, Dallas, TX 75201. </P>
-<P> Contents are loaded from servers of the CDN. In order for a connection to be established, it is technically necessary to transmit the user's IP address. </P>
-<P> The legal basis for the processing is Art. 6 Para. 1 Subparagraph 1 Letter f) GDPR. Our legitimate interest lies in improving the speed and availability of our website. </P>
-<P><A href="https://www.stackpath.com/legal/privacy-statement/" rel="noopener noreferrer nofollow"> Data protection declaration from StackPath </A></P>
-<P></P>
-<P><STRONG> Unpkg CDN </STRONG></P>
-<P> We use the content delivery network (CDN) unpkg CDN. This is technically provided by Cloudflare Inc., 101 Townsend Street, San Francisco, California 94107. </P>
-<P> Contents are loaded from the CDN servers. In order for a connection to be established, it is technically necessary to transmit the user's IP address. </P>
-<P> The legal basis for the processing is Art. 6 Para. 1 Subpara. 1 Letter f) GDPR. Our legitimate interest lies in improving the speed and availability of our website. </P>
-<P><A href="https://www.cloudflare.com/de-de/privacypolicy/" rel="noopener noreferrer nofollow"> Cloudflare privacy policy </A></P>
-<P><STRONG> Instagram </STRONG></P>
-<P> We integrate content and buttons from the social network Instagram via a plugin on our website. Provider: Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland. </P>
-<P> In order to be able to load content from Instagram, it is technically necessary to transfer the IP address of the user to the company. If the user is logged in to Instagram, the visit to a page can be assigned to the account. </P>
-<P> Insofar as we obtain the consent of the user, the processing of data takes place on the legal basis of Art. 6 para. 1 subpara. 1 letter a) GDPR. Otherwise, it is based on Art. 6 Para. 1 Subpara. 1 Letter f) GDPR. Our legitimate interest in the integration of Instagram content and buttons consists in the user-friendly design of our website. </P>
-<P><A href="https://help.instagram.com/519522125107875"> Instagram privacy policy </A></P>
-<P><STRONG> Google reCAPTCHA </STRONG></P>
-<P> We use the reCAPTCHA service to increase the security and availability of our website. Provider: Google Ireland Ltd., Google Building Gordon House, 4 Barrow St, Dublin, D04 E5W5, Ireland. </P>
-<P> With queries we want to ensure that actions on our side are not triggered by bots. For this it is technically necessary to transfer the IP address of the user to Google. </P>
-<P> The legal basis for the processing is Art. 6 Para. 1 Subparagraph 1 Letter f) GDPR. Our legitimate interest lies in ensuring website security and protecting against spam and abuse. </P>
-<P><A href="https://policies.google.com/privacy?hl=de"> Data protection declaration from reCAPTCHA </A></P>
-<P><STRONG> FontAwesome </STRONG></P>
-<P> We use icons from Font Awesome on our website. Provider: Fonticons Inc., Corporation Trust Center 1209 Orange St., Wilmington, New Castle, DE 19801, USA. </P>
-<P> Technically, the icons are provided via the content delivery network StackPath. Provider: StackPath LLC, 2021 McKinney Ave. Suite 1100, Dallas, TX 75201. Contents are loaded from servers of the CDN. In order for a connection to be established, it is technically necessary to transmit the user's IP address. Fonticons processes data about the use of the CDN, but saves it in an identifiable form for a few weeks at most. </P>
-<P> The legal basis for processing is Art. 6 Para. 1 Sub-Paragraph 1 Letter f) GDPR. Our legitimate interest lies in the user-friendly design as well as improving the speed and availability of our website. </P>
-<P> We have concluded a data protection agreement with Fonticons. Using standard contractual clauses approved by the EU Commission, we and the company have provided suitable guarantees for the protection of personal data (Art. 28 GDPR). </P>
-<P><A href="https://fontawesome.com/privacy" rel="noopener noreferrer nofollow"> Fonticons privacy policy </A></P>
-<P><A href="https://www.stackpath.com/legal/privacy-statement/" rel="noopener noreferrer nofollow"> Data protection declaration from StackPath </A></P>
-<P><STRONG> Google Fonts </STRONG></P>
-<P> We use Google Fonts on our website. Provider: Google Ireland Ltd., Google Building Gordon House, 4 Barrow St, Dublin, D04 E5W5, Ireland. </P>
-<P> Fonts are loaded from the Google server. In order to establish a connection to the server, it is technically necessary to transfer the IP address of the user. </P>
-<P> The legal basis for processing is Art. 6 Para. 1 Sub-Paragraph 1 Letter f) GDPR. Our legitimate interest lies in the shortening of loading times and a uniform display on different end devices. </P>
-<P><A href="https://policies.google.com/privacy?hl=de"> Data protection declaration from Google Fonts </A></P>
-<H2 id=profile-in-sozialen-netzwerken> Profiles in social networks </H2>
-<P> We are present in one or more social networks. The details are: Instagram. When you contact us, we process personal data as described above under Contacting us. </P>
-<P> The providers of social networks process data in accordance with their data protection regulations, which can be accessed here: </P>
-<P></P>
-<UL>
-<LI><A href="https://de-de.facebook.com/help/instagram/155833707900388" target=_blank> Instagram </A></LI></UL>
-<P> If a user is logged in with his account, the activities on our profile in the respective social network can be assigned to him if necessary. This can be done across devices and, if necessary, even without logging in, for example using cookies or mobile identifiers. The providers of social networks create pseudonymized user profiles based on the collected data, with which they can display personalized advertising in particular. </P>
-<H2 id=rechte-betroffener-personen> Rights of data subjects </H2>
-<P> If the user's personal data is processed, he is the data subject within the meaning of the GDPR. Affected persons have the following rights: </P>
-<P><STRONG> Right to information: </STRONG> The person concerned has the right to request confirmation as to whether personal data concerning them are being processed. If personal data is processed, the person concerned has the right to free information and a copy of the personal data that is the subject of the processing. </P>
-<P><STRONG> Right to correction: </STRONG> The person concerned has the right to request the immediate correction of incorrect or incomplete personal data. </P>
-<P><STRONG> Right to deletion: </STRONG> The person concerned has the right, in accordance with the statutory provisions, to request the immediate deletion of personal data relating to them. </P>
-<P><STRONG> Right to restriction of processing: </STRONG> The person concerned has the right to request a restriction on the processing of personal data concerning them in accordance with the statutory provisions. </P>
-<P><STRONG> Right to data portability: </STRONG> The data subject has the right to receive the personal data concerning him or her in a structured, common and machine-readable format or to request a transfer to another person responsible. </P>
-<P><STRONG> Right to object: </STRONG> The person concerned has the right at any time, for reasons that arise from their particular situation, to object to the processing of personal data concerning them, which is based on Art takes place to file an objection; this also applies to profiling based on these provisions. If personal data are processed in order to operate direct mail, the data subject has the right to object at any time to the processing of personal data concerning them for the purpose of such advertising; this also applies to profiling insofar as it is associated with such direct mail. </P>
-<P><STRONG> Right of withdrawal: </STRONG> The person concerned has the right to revoke their consent at any time. </P>
-<P><STRONG> Right to complain: </STRONG> The person concerned has the right to complain to a supervisory authority. </P>
-<P><STRONG> Status of the data protection declaration: </STRONG> 08. March 2021 </P>
-<P> This privacy policy was created with the generator by <A href="https://www.einfach-abmahnsicher.de"> Einfach Abmahnsicher </A> created. </P>
+    <h1 class="title is-size-1-desktop is-size-2-touch glitch">Datenschutzerklärung</h1>
+
+    <h2 class="is-size-4">1. Datenschutz auf einen Blick</h2>
+    <br>
+    <div class="ml-6">
+        <h3 class="is-size-5">Allgemeine Hinweise</h3>
+        <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.</p>
+    </div>
+    <br>
+    <h2 class="is-size-4">2. Datenerfassung auf dieser Website</h2>
+    <br>
+    <div class="ml-6">
+        <h3 class="is-size-5">Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h3>
+        <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.</p>
+        <br> 
+        <h3 class="is-size-5">Wie erfassen wir Ihre Daten?</h3>
+        <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
+        <p>Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.</p>
+        <br>
+        <h3 class="is-size-5">Wofür nutzen wir Ihre Daten?</h3>
+        <p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.</p>
+        <br>
+        <h3 class="is-size-5">Welche Rechte haben Sie bezüglich Ihrer Daten?</h3>
+        <p>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.</p>
+        <p>Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.</p>
+    </div>
+    <br>
+    <h2 class="is-size-4">3. Hosting</h2>
+    <br>
+    <div class="ml-6">
+        <h3 class="is-size-5">Externes Hosting</h3>
+        <p>Diese Website wird bei einem externen Dienstleister gehostet (Hoster). 
+            Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. 
+            Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.</p>
+        <p>Der Einsatz des Hosters erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO).</p>
+        <p>Unser Hoster wird Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.</p>
+        <p>Wir setzen folgenden Hoster ein:</p>
+        <p>Web-Services
+            <br> Joey Peter
+            <br> Hauptstraße 15a
+            <br> 65597 Hünfelden
+        </p>
+        <br>
+        <h3 class="is-size-5">Abschluss eines Vertrages über Auftragsverarbeitung</h3>
+        <p>Um die datenschutzkonforme Verarbeitung zu gewährleisten, haben wir einen Vertrag über Auftragsverarbeitung mit unserem Hoster geschlossen.</p>
+    </div>
+    <br>
+    <h2 class="is-size-4">4. Allgemeine Hinweise und Pflichtinformationen</h2>
+    <br>
+    <div class="ml-6">
+        <br>
+        <h3 class="is-size-5">Datenschutz</h3>
+        <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+        <p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. 
+            Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. 
+            Sie erläutert auch, wie und zu welchem Zweck das geschieht.</p>
+        <p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. 
+            Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+        <br>
+        <h3 class="is-size-5">Hinweis zur verantwortlichen Stelle</h3>
+        <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+        <p>Joey Peter
+            <br> Hauptstraße 15a
+            <br> 65597 Hünfelden</p>
+        <p>Telefon: 01512 5281498
+            <br> E-Mail: <a href="mailto:joey.peter1998@gmail.com" title="Opens window for sending email">joey.peter1998@gmail.com</a>
+        </p>
+        <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
+        <br>
+        <h3 class="is-size-5">Speicherdauer</h3>
+        <p>Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. 
+            Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z.B. steuer- oder handelsrechtliche Aufbewahrungsfristen); 
+            im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.</p>
+        <br>
+        <h3 class="is-size-5">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+        <p>Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. 
+            Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
+        <br>
+        <h3 class="is-size-5">Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)</h3>
+        <p>WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; 
+            DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. D
+            IE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. 
+            WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).</p>
+        <p>WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; 
+            DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. 
+            WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).</p>
+        <br>
+        <h3 class="is-size-5">Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
+        <p>Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. 
+            Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.</p>
+        <br>
+        <h3 class="is-size-5">Recht auf Datenübertragbarkeit</h3>
+        <p>Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. 
+            Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
+        <br>
+        <h3 class="is-size-5">SSL- bzw. TLS-Verschlüsselung</h3>
+        <p>Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. 
+            Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+        <p>Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.</p>
+        <br>
+        <h3 class="is-size-5">Auskunft, Löschung und Berichtigung</h3>
+        <p>Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. 
+            Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.</p>
+        <br>
+        <h3 class="is-size-5">Recht auf Einschränkung der Verarbeitung</h3>
+        <p>Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. 
+            Hierzu können Sie sich jederzeit an uns wenden. 
+            Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:</p>
+        <ul>
+            <li>Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+            <li>Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen.</li>
+            <li>Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+            <li>Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+        </ul>
+        <p>Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.</p>
+    </div>
+    <br>
+    <h2 class="is-size-4">5. Datenerfassung auf dieser Website</h2>
+    <br>
+    <div class="ml-6">
+        <h3 class="is-size-5">Server-Log-Dateien</h3>
+        <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. 
+            Dies sind:</p>
+        <ul>
+            <li>Browsertyp und Browserversion</li>
+            <li>verwendetes Betriebssystem</li>
+            <li>Referrer URL</li>
+            <li>Hostname des zugreifenden Rechners</li>
+            <li>Uhrzeit der Serveranfrage</li>
+            <li>IP-Adresse</li>
+        </ul>
+        <p>Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.</p>
+        <p>Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. 
+            Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden.</p>
+        <br>
+        <h3 class="is-size-5">Anfrage per E-Mail, Telefon oder Telefax</h3>
+        <p>Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. 
+            Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+        <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. 
+            In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.</p>
+        <p>Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung Ihres Anliegens). 
+            Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.</p>
+    </div>
 </div>

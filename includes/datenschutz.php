@@ -2,8 +2,7 @@
 
 $a = array();
 $a['filename'] = 'datenschutz.php';
-$a['title'] = 'Privacy Policy';
-$a['header-footer'] = true;
+$a['title'] = 'Datenschutzerklärung';
 $a['data'] = array();
 
 return $a;
