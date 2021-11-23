@@ -1,0 +1,4 @@
+Options -Indexes
+ErrorDocument 403 /functions/nopermission.php
+ErrorDocument 404 /functions/notfound.php
+order deny,allow

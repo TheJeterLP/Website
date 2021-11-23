@@ -38,7 +38,7 @@ https://jp-motortechnik.de
         <link rel="stylesheet" type="text/css" href="/css/<?php echo $css ?>">
         <link rel="stylesheet" type="text/css" href="/css/captcha.css">
         <link rel="stylesheet" type="text/css" href="/lib/to-top/material-scrolltop.css"/>
-        
+
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
         <?php
@@ -69,20 +69,31 @@ https://jp-motortechnik.de
                             </div>
                             <div id="navbarMenu" class="navbar-menu">
                                 <div class="navbar-start">
-                                    <a class="navbar-item" href="/">
+                                    <a class="navbar-item" href="/about">
                                         Über mich
-                                    </a>
+                                    </a>   
 
-                                    <a class="navbar-item" href="/">
-                                        Referenzen
-                                    </a>     
-                                    
-                                    <a class="navbar-item" href="/">
-                                        Links
-                                    </a>  
-                                    
-                                    <a class="navbar-item" href="/">
+                                    <div class="navbar-item has-dropdown is-hoverable">
+                                        <a class="navbar-item">
+                                            Links
+                                        </a>
+
+                                        <div class="navbar-dropdown">
+                                            <a class="navbar-item" href="https://short.jp-motortechnik.de/cloud" target="_blank">
+                                                Cloud
+                                            </a>
+                                            <a class="navbar-item" href="https://short.jp-motortechnik.de/passscheiben" target="_blank">
+                                                Passscheiben
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <a class="navbar-item" href="/motordaten">
                                         Motordaten
+                                    </a>  
+
+                                    <a class="navbar-item" href="https://www.ilcats.ru/opel/?clid=7557&pid=13887&shopid=5943&language=de" target="_blank">
+                                        Teilekatalog
                                     </a>  
                                 </div>
                             </div>

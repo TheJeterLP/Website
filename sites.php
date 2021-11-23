@@ -8,5 +8,6 @@ $files['datenschutz'] = 'datenschutz.php';
 $files['data-protection'] = 'datenschutz.php';
 $files['notfound'] = 'notfound.php';
 $files['nopermission'] = 'nopermission.php';
-$files['partner'] = 'partner.php';
+$files['motordaten'] = 'motordaten.php';
+$files['about'] = 'about.php';
 ?>
