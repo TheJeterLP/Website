@@ -39,6 +39,7 @@ if ($headerfooter) {
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 <script src="/lib/to-top/material-scrolltop.js"></script>
+<script src="/js/navbar-burger.js"></script>
 <script type="text/javascript" src="/js/scripts.js"></script>
 <?php
 if ($customjs !== 'null') {

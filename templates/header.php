@@ -46,7 +46,8 @@ https://jp-motortechnik.de
             echo '<link rel="stylesheet" type="text/css" href ="/css/' . $ret['additional-css'] . '">';
         }
         ?>
-        <script src="https://www.google.com/recaptcha/api.js?render=6Lf2BHQaAAAAAP1v0qqNX2vHZhUp6_BQ7h9fSY4x"></script>        
+        <script src="https://cdn.tiny.cloud/1/6zswnuveviswq1j1m3bbirs6u0vq8dfzwbnvk0nxl6kpvtkk/tinymce/5/tinymce.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6Lf2BHQaAAAAAP1v0qqNX2vHZhUp6_BQ7h9fSY4x"></script>  
     </head>
 
     <body>
@@ -59,7 +60,7 @@ https://jp-motortechnik.de
                         <div class="container">
                             <div class="navbar-brand">
                                 <a href= "/" class="navbar-item">
-                                    <img alt="Logo" src="img/logos/logo-transparent-black.png" height="200" width="260">
+                                    <img alt="Logo" src="/img/logos/logo-transparent-black.png" height="200" width="260">
                                 </a>
                                 <span class="navbar-burger burger" data-target="navbarMenu">
                                     <span></span>
@@ -69,8 +70,8 @@ https://jp-motortechnik.de
                             </div>
                             <div id="navbarMenu" class="navbar-menu">
                                 <div class="navbar-start">
-                                    <a class="navbar-item" href="/about">
-                                        Über mich
+                                    <a class="navbar-item" href="/blog">
+                                        Blog
                                     </a>   
 
                                     <div class="navbar-item has-dropdown is-hoverable">
@@ -95,6 +96,52 @@ https://jp-motortechnik.de
                                     <a class="navbar-item" href="https://www.ilcats.ru/opel/?clid=7557&pid=13887&shopid=5943&language=de" target="_blank">
                                         Teilekatalog
                                     </a>  
+
+                                    <?php
+                                    if (!getUserID($db)) {
+                                        ?>
+                                        <a class="navbar-item is-white is-outlined" href="/user/login">
+                                            <span class="icon">
+                                                <i class="fas fa-sign-in-alt"></i>
+                                            </span>
+                                            <span>Log In</span>                                           
+                                        </a>
+                                        <?php
+                                        if ($registration) {
+                                            ?>
+                                            <a class="navbar-item is-white is-outlined" href="/user/register">
+                                                <span class="icon">
+                                                    <i class="fas fa-user-plus"></i>
+                                                </span>
+                                                <span>Registrieren</span>
+                                            </a>
+                                            <?php
+                                        }
+                                    } else {
+                                        ?>
+                                        <a class="navbar-item is-white is-outlined" href="/user/logout">
+                                            <span class="icon">
+                                                <i class="fas fa-sign-out-alt"></i>
+                                            </span>
+                                            <span>Log Out</span>
+                                        </a>
+
+
+                                        <a class="navbar-item is-white is-outlined" href="/user/editprofile">
+                                            <span class="icon">
+                                                <i class="fas fa-edit"></i>
+                                            </span>
+                                            <span>Profil ändern</span>
+                                        </a>
+                                        <a class="navbar-item is-white is-outlined" href="/admin/write">
+                                            <span class="icon">
+                                                <i class="fas fa-pencil-alt"></i>
+                                            </span>
+                                            <span>Blog Post schreiben</span>
+                                        </a>  
+                                        <?php
+                                    }
+                                    ?>   
                                 </div>
                             </div>
                         </div>
