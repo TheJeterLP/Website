@@ -20,7 +20,7 @@ document.getElementById('write-button').onclick = function () {
                     $("#write-true").fadeIn().promise();
                     var delay = 5000;
                     setTimeout(function () {
-                        window.location = '/';
+                        window.location = '/blog';
                     }, delay);
                 } else {
                     console.log("fading in false");
