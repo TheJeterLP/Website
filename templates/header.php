@@ -73,30 +73,11 @@ https://jp-motortechnik.de
                                     <a class="navbar-item" href="/blog">
                                         Blog
                                     </a>   
-
-                                    <div class="navbar-item has-dropdown is-hoverable">
-                                        <a class="navbar-item">
-                                            Links
-                                        </a>
-
-                                        <div class="navbar-dropdown">
-                                            <a class="navbar-item" href="https://short.jp-motortechnik.de/cloud" target="_blank">
-                                                Cloud
-                                            </a>
-                                            <a class="navbar-item" href="https://short.jp-motortechnik.de/passscheiben" target="_blank">
-                                                Passscheiben
-                                            </a>
-                                        </div>
-                                    </div>
-
+                                 
                                     <a class="navbar-item" href="/motordaten">
-                                        Motordaten
+                                        Motorenbau
                                     </a>  
-
-                                    <a class="navbar-item" href="https://www.ilcats.ru/opel/?clid=7557&pid=13887&shopid=5943&language=de" target="_blank">
-                                        Teilekatalog
-                                    </a>  
-
+                                   
                                     <?php
                                     if (!getUserID($db)) {
                                         ?>

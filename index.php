@@ -32,12 +32,12 @@ $db = new MySQLi($mySQLHost, $mySQLUser, $mySQLPassword, $mySQLDatabase);
 
 if (mysqli_connect_errno()) {
     //connection not successful, display mysqli error message
-    echo '<p>Could not connect to the database, MySQL said: ' . mysqli_connect_error() . '</p>';
+    echo '<p>Fehler beim Verbinden zur Datenbank, MySQL: ' . mysqli_connect_error() . '</p>';
 } else {
     prepareDB($db);
 //standard values of variables, variable defining
     $headerfooter = true;
-    $title = 'No page title was set';
+    $title = 'JP Motortechnik';
     $page = 'main';
     $css = 'design.css';
     $customjs = 'null';
@@ -57,7 +57,7 @@ if (mysqli_connect_errno()) {
             $ret = include 'includes/' . $files[$page];
         } else {
             include 'templates/header.php';
-            showError("Include-File was not found: 'includes/" . $files[$page] . "'");
+            showError("Es wurde keine Include Datei gefunden: 'includes/" . $files[$page] . "'");
             include 'templates/footer.php';
             return;
         }
@@ -96,17 +96,17 @@ if (mysqli_connect_errno()) {
             include $file;
         } else {
             //template file not found
-            showError('Template "' . $file . '" was NOT found.');
+            showError('Template "' . $file . '" wurde nicht gefunden.');
         }
     } else if (is_string($ret)) {
         //include returns a string -> display as error message
         showError($ret);
     } else if (1 === $ret) {
         //include does not return anything
-        showError("No return in the include file!");
+        showError("Die Include Datei Returnt nichts!");
     } else {
         //include returns something we don't handle (like boolean for ex)
-        showError("Include file has an invalid return.");
+        showError("Die Include Datei Returnt nicht das was das System erwartet.");
     }
 
 //include footer template

@@ -1,6 +1,7 @@
 /* Navbar */
 .navbar {
    height: 7.00rem !important; 
+   background-color: #EFEFEF !important;
 }
 
 .navbar-item img {

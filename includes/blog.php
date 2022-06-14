@@ -16,6 +16,7 @@ if ($post != null) {
 
     $blogpost = new blogpost($post, $db);
     $a['data']['blog'][$post] = $blogpost;
+    $a['title'] = $blogpost->getTitle();
 } else {
     $sql = 'SELECT ID FROM blogposts ORDER BY date DESC;';
 

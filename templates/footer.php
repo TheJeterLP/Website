@@ -16,15 +16,6 @@ if ($headerfooter) {
             </ul>            
         </div>
 
-        <div class="tabs is-centered">
-            <ul>
-                <li><a href="https://www.facebook.com/jp.motortechnik" target="_blank"><span class="icon"><i
-                                class="fab fa-facebook"></i></span></a></li>
-                <li><a href="https://www.instagram.com/jp.motortechnik" target="_blank"><span class="icon"><i
-                                class="fab fa-instagram"></i></span></a></li>
-            </ul>
-        </div>
-
         <div class="is-centered">
             <p>JP Motortechnik</p>
             <p>Website entwickelt von <a href="https://jp-motortechnik.de/">Joey Peter.</a></p>
