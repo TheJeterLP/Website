@@ -16,6 +16,12 @@ if ($headerfooter) {
             </ul>            
         </div>
 
+        <div class="tabs is-centered">
+            <ul>
+                <li><a href="https://github.com/TheJeterLP" target="_blank"><span class="icon"><i class="fa-brands fa-github"></i></span></a></li>               
+            </ul>
+        </div>
+
         <div class="is-centered">
             <p>JP Motortechnik</p>
             <p>Website entwickelt von <a href="https://jp-motortechnik.de/">Joey Peter.</a></p>
@@ -26,9 +32,8 @@ if ($headerfooter) {
 ?>
 
 </section>
-<script src="https://kit.fontawesome.com/1f62e8f251.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" data-cfasync="false"></script>
 <script src="/lib/to-top/material-scrolltop.js"></script>
 <script src="/js/navbar-burger.js"></script>
 <script type="text/javascript" src="/js/scripts.js"></script>

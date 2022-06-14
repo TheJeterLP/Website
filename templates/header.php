@@ -31,22 +31,22 @@ https://jp-motortechnik.de
         <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#8769c3">
 
-        <script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
+        <script src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css"/>
 
         <link rel="stylesheet" type="text/css" href="/css/<?php echo $css ?>">
         <link rel="stylesheet" type="text/css" href="/css/captcha.css">
         <link rel="stylesheet" type="text/css" href="/lib/to-top/material-scrolltop.css"/>
 
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css" />
 
         <?php
         if (isset($ret['additional-css'])) {
             echo '<link rel="stylesheet" type="text/css" href ="/css/' . $ret['additional-css'] . '">';
         }
         ?>
-        <script src="https://cdn.tiny.cloud/1/6zswnuveviswq1j1m3bbirs6u0vq8dfzwbnvk0nxl6kpvtkk/tinymce/5/tinymce.min.js"></script>
+        <script src="https://cdn.tiny.cloud/1/joieqdig4z7xn6f9mk0wvfxxt1rv8ik8d5ro4p79fyjx1cx2/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
         <script src="https://www.google.com/recaptcha/api.js?render=6Lf2BHQaAAAAAP1v0qqNX2vHZhUp6_BQ7h9fSY4x"></script>  
     </head>
 
@@ -73,11 +73,11 @@ https://jp-motortechnik.de
                                     <a class="navbar-item" href="/blog">
                                         Blog
                                     </a>   
-                                 
+
                                     <a class="navbar-item" href="/motordaten">
                                         Motorenbau
                                     </a>  
-                                   
+
                                     <?php
                                     if (!getUserID($db)) {
                                         ?>
