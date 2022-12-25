@@ -1,9 +1,0 @@
-# Gruppe 1
-User-agent: Googlebot
-Disallow: /admin/
-
-# Gruppe 2
-User-agent: *
-Allow: /
-
-Sitemap: /sitemap.xml
