@@ -12,18 +12,29 @@ $darker-blue: #0c5f97;
 $white: #FFFFFF;
 
 // Update Bulma's global variables
+//background coloring
 $body-background-color: $raisin-black;
 $body-color: $white;
+
+//text coloring
 $text: $white;
 $text-strong: $white;
 $family-sans-serif: "Nunito", sans-serif;
+
+//Color shemes
 $primary: $rich-black;
+
+//Links
 $link: $french-blue;
 $link-hover: $darker-blue;
 $link-active: $french-blue;
 $link-focus: $french-blue;
 $tabs-link-color: $french-blue;
 $tabs-link-hover-color: $darker-blue;
+
+//footer
+$footer-padding: 1rem 1rem;
+$footer-background-color: $rich-black;
 
 // Update some of Bulma's component variables
 $control-border-width: 2px;

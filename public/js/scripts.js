@@ -29,9 +29,29 @@ window.cookieconsent.initialise({
     "static": true
 });
 
-
-
-
-
-
-
+window.onload = function () {
+    Particles.init({ 
+        selector: '.background' ,
+        maxParticles: 200,
+        connectParticles: true,
+        responsive: [
+            {
+              breakpoint: 768,
+              options: {
+                maxParticles: 200,
+              }
+            }, {
+              breakpoint: 425,
+              options: {
+                maxParticles: 100,
+              }
+            }, {
+              breakpoint: 320,
+              options: {
+                maxParticles: 0
+                // disables particles.js
+              }
+            }
+          ]
+    });
+};
