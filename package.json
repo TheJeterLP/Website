@@ -1,7 +1,7 @@
 {
-    "name": "bluemoondev-website",
-    "version": "0.0.2",
-    "description": "The website for BlueMoonDev",
+    "name": "thejeterlp-website",
+    "version": "0.0.1",
+    "description": "The website for thejeterlp",
     "scripts": {
         "start": "node server.js",
         "dev": "nodemon ./server.js",
