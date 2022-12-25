@@ -1,8 +1,3 @@
-/* Navbar */
-.navbar {
-    height: 7.00rem !important;
-}
-
 .navbar-item img {
     max-height: 5.75rem !important;
 }
@@ -14,11 +9,6 @@
 
 .box {
     opacity: 0.6;
-}
-
-.navbar-item,
-.navbar-link {
-    padding: .5rem 1.75rem !important;
 }
 
 /* Cookie Consent https://www.osano.com/cookieconsent/documentation/about-cookie-consent/ */

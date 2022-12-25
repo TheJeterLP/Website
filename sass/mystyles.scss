@@ -18,12 +18,14 @@ $body-color: $white;
 
 //text coloring
 $box-color: $raisin-black;
+$box-background-color: $white;
 $text: $white;
 $text-strong: $white;
 $family-sans-serif: "Nunito", sans-serif;
 
 //Color shemes
 $primary: $rich-black;
+$scheme-main: $rich-black;
 
 //Links
 $link: $french-blue;
@@ -36,6 +38,10 @@ $tabs-link-hover-color: $darker-blue;
 //footer
 $footer-padding: 1rem 1rem;
 $footer-background-color: $rich-black;
+
+//navbar
+$navbar-height: 7rem;
+$navbar-padding-horizontal: 2rem;
 
 // Update some of Bulma's component variables
 $control-border-width: 2px;

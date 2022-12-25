@@ -6,6 +6,7 @@
 const express = require('express');
 const path = require('path');
 const mysql = require('mysql');
+const { get } = require('http');
 
 /**
  * App Variables
@@ -45,6 +46,22 @@ app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, "public")));
 
 /**
+ * Functions
+ * @param {*} dateString 
+ * @returns 
+ */
+function getAge(dateString) {
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+
+/**
  * Routes Definitions
  */
 app.get('/', (req, res) => {
@@ -52,7 +69,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    res.render('about', {title: 'About'})
+    var ageC = getAge('1998/04/25');
+    res.render('about', {title: 'About', age: ageC})
 });
 
 app.get('/projects', (req, res) => {
@@ -61,6 +79,10 @@ app.get('/projects', (req, res) => {
 
 app.get('/imprint', (req, res) => {
     res.render('imprint', {title: 'Imprint'})
+});
+
+app.get('/privacy', (req, res) => {
+    res.render('privacy', {title: 'Data Protection & Privacy'})
 });
 
 

@@ -40,14 +40,14 @@ html
                             span 
                     .navbar-menu#navbarMenu 
                         .navbar-start
-                            a.navbar-item(href="/about")
-                                p About
-                            a.navbar-item(href="/projects")
-                                p Projects
-                            a.navbar-item(href="/imprint")
-                                p Imprint
-                            a.navbar-item(href="https://github.com/TheJeterLP" target="_blank")
-                                p GitHub
+                            a.navbar-item(href="/about") About
+                            a.navbar-item(href="/projects") Projects
+                            a.navbar-item(href="https://github.com/TheJeterLP" target="_blank") GitHub
+                            .navbar-item.has-dropdown.is-hoverable
+                                a.navbar-link Legal 
+                                .navbar-dropdown 
+                                    a.navbar-item(href="/imprint") Imprint 
+                                    a.navbar-item(href="/privacy") Data protection 
         .hero-body
             .container          
                 block layout-content
@@ -58,11 +58,19 @@ html
                         .level-left
                             p © 2022 Joey Peter
                         .level-right 
-                            a(href="https://github.com/TheJeterLP/Website" target="_blank")
-                                button.button.is-link.is-rounded
-                                    span.icon 
-                                        i.fab.fa-github
-                                    span Source Code
+                            .columns 
+                                .column
+                                    a(href="https://github.com/BlueMoonDevelopment" target="_blank")
+                                        button.button.is-link.is-rounded
+                                            span.icon 
+                                                i.fab.fa-github
+                                            span BlueMoonDevelopment
+                                .column
+                                    a(href="https://github.com/TheJeterLP/Website" target="_blank")
+                                        button.button.is-link.is-rounded
+                                            span.icon 
+                                                i.fab.fa-github
+                                            span Source Code                           
     canvas.background
 
     script(src="https://code.jquery.com/jquery-3.5.1.min.js")  
