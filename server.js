@@ -6,7 +6,7 @@
 const express = require('express');
 const path = require('path');
 const mysql = require('mysql');
-const { get } = require('http');
+const functions = require('./functions.js');
 
 /**
  * App Variables
@@ -46,22 +46,6 @@ app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, "public")));
 
 /**
- * Functions
- * @param {*} dateString 
- * @returns 
- */
-function getAge(dateString) {
-    var today = new Date();
-    var birthDate = new Date(dateString);
-    var age = today.getFullYear() - birthDate.getFullYear();
-    var m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-    }
-    return age;
-}
-
-/**
  * Routes Definitions
  */
 app.get('/', (req, res) => {
@@ -69,8 +53,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    var ageC = getAge('1998/04/25');
-    res.render('about', {title: 'About', age: ageC})
+    res.render('about', {title: 'About', age: functions.getAge("1998/04/25")})
 });
 
 app.get('/projects', (req, res) => {
@@ -89,7 +72,7 @@ app.get('/privacy', (req, res) => {
 
 //404 Error, has to be called last (after all other pages)
 app.use(function(req,res){
-    res.status(404).render('404', {title: '404'});
+    res.status(404).render('404', {title: '404 - ' + req.path, page: req.path});
 });
 /**
  * Server Activation
