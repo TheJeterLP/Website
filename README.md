@@ -1,6 +1,6 @@
 # NodeJS-Website
 
-
+# First Installation
 NPM, NodeJS and PM2 need to be installed.
 On First startup, run <br>
   `npm install`<br>
@@ -16,5 +16,9 @@ Then to start the webserver just run the `start.sh`, to stop just run the `stop.
 <br>
 Also you should setup an Apache2 Webserver and Proxy the NodeJS Server to that.
 
-Pug documentation: https://pugjs.org/api/getting-started.html
-NodeJS documentation: https://nodejs.org/en/docs/guides/
+# External Documentation
+
+[Pug documentation](https://pugjs.org/api/getting-started.html)<br>
+[NodeJS documentation](https://nodejs.org/en/docs/guides/)<br>
+[Express.JS documentation](https://expressjs.com/guide/routing.html)<br>
+[Bulma Documentation](https://bulma.io/documentation/)
