@@ -4,18 +4,18 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
 // Set your brand colors
-$blue: #4361ee;
-$lighter-blue: #94A6F5;
+$orange: #ff8000;
+$lighter-orange: #FFAB00;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
-$primary: $blue;
-$link: $blue;
-$link-hover: $lighter-blue;
-$link-active: $blue;
-$link-focus: $blue;
-$tabs-link-color: $blue;
-$tabs-link-hover-color: $lighter-blue;
+$primary: $orange;
+$link: $orange;
+$link-hover: $lighter-orange;
+$link-active: $orange;
+$link-focus: $orange;
+$tabs-link-color: $orange;
+$tabs-link-hover-color: $lighter-orange;
 
 // Update some of Bulma's component variables
 $control-border-width: 2px;
