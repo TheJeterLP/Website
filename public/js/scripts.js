@@ -29,7 +29,7 @@ window.cookieconsent.initialise({
     "static": true
 });
 
-window.onload = function () {
+window.onload = async function () {
     Particles.init({ 
         selector: '.background' ,
         maxParticles: 200,
