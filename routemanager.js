@@ -1,36 +1,42 @@
-function setupRoutes(app) {
+const fs = require('node:fs');
+const path = require('node:path');
+
+function loadRoutes(app) {
+    const routesPath = path.join(__dirname, 'views');
+    const routesFiles = fs.readdirSync(routesPath).filter(file => file.endsWith('.js'));
+
+    console.log(`Loading views from ${routesPath}`);
+
+    for (const file of routesFiles) {
+        const filePath = path.join(routesPath, file);
+        console.log(`Loading ${file}`);
+        const route = require(filePath);
+
+        let options = [];
+        options['title'] = route.title;
+
+        const variables = route.onLoad();
+        if (variables.size > 0) {
+            for (const key of variables.keys()) {
+                const value = variables.get(key);
+                options[key] = value;
+            }
+        }
+
+        app.get(route.urlpath, (req, res) => {
+            res.render(route.pugfile, options, function (err, html) {
+                route.onCall();
+                res.send(html);
+            });
+        });
+    }
+
     /**
-     * Internal Sites
-     */
-    app.get('/', (req, res) => {
-        res.render('index', { title: 'Home' })
-    });
-
-    app.get('/about', (req, res) => {
-        res.render('about', { title: 'About', age: getAge("1998/04/25") })
-    });
-
-    app.get('/projects', (req, res) => {
-        res.render('projects', { title: 'Projects' })
-    });
-
-    app.get('/imprint', (req, res) => {
-        res.render('imprint', { title: 'Imprint' })
-    });
-
-    app.get('/privacy', (req, res) => {
-        res.render('privacy', { title: 'Data Protection & Privacy' })
-    });
-
-    /**
-     * External links
-     */
-
+    * External links
+    */
     app.get('/discord', (req, res) => {
         res.redirect('https://discord.gg/42n2KxM3');
     });
-
-
 
     //404 Error, has to be called last (after all other pages)
     app.use(function (req, res) {
@@ -38,20 +44,4 @@ function setupRoutes(app) {
     });
 }
 
-/**
- * Calculates how old the given date is at the current time.
- * @param {*} dateString format: yyyy/mm/dd
- * @returns age as simple number in yy
- */
-function getAge(dateString) {
-    var today = new Date();
-    var birthDate = new Date(dateString);
-    var age = today.getFullYear() - birthDate.getFullYear();
-    var m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-    }
-    return age;
-}
-
-module.exports = { setupRoutes };
+module.exports = { loadRoutes };

@@ -30,8 +30,7 @@ app.use(express.static(path.join(__dirname, "public")));
 /**
  * Routes Definitions
  */
-
-routemanager.setupRoutes(app);
+routemanager.loadRoutes(app);
 
 /**
  * Server Activation
