@@ -1,15 +1,16 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const logmanager = require('./logmanager.js');
 
 function loadRoutes(app) {
     const routesPath = path.join(__dirname, 'views');
     const routesFiles = fs.readdirSync(routesPath).filter(file => file.endsWith('.js'));
 
-    console.log(`Loading views from ${routesPath}`);
+    logmanager.info(`Loading views from ${routesPath}`);
 
     for (const file of routesFiles) {
         const filePath = path.join(routesPath, file);
-        console.log(`Loading ${file}`);
+        logmanager.info(`Loading ${file}`);
         const route = require(filePath);
 
         let options = [];
@@ -20,11 +21,13 @@ function loadRoutes(app) {
             for (const key of variables.keys()) {
                 const value = variables.get(key);
                 options[key] = value;
+                logmanager.debug(`Loaded key: ${key} as value: ${value}`);
             }
         }
 
         app.get(route.urlpath, (req, res) => {
             res.render(route.pugfile, options, function (err, html) {
+                logmanager.debug(`Route called: ${route.urlpath} with title: ${options.title}`);
                 route.onCall();
                 res.send(html);
             });
