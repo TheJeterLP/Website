@@ -3,6 +3,10 @@
  */
 const express = require('express');
 const path = require('path');
+
+/**
+ * Required internal modules
+ */
 const routemanager = require('./routemanager.js');
 const dbmanager = require('./dbmanager.js');
 const logmanager = require('./logmanager.js');
