@@ -7,17 +7,17 @@ const express = require('express');
 const path = require('path');
 const routemanager = require('./routemanager.js');
 const dbmanager = require('./dbmanager.js');
+const { website_port } = require('./config.json');
 
 /**
  * App Variables
  */
 const app = express();
-const port = 8081;
 
 /**
- * SQL Connection, currently not used.
+ * SQL Connection.
  */
-//var con = dbmanager.connectToDatabase(); 
+var conn = dbmanager.connectToDatabase();
 
 /**
  * App Configuration
@@ -36,6 +36,6 @@ routemanager.setupRoutes(app);
 /**
  * Server Activation
  */
-app.listen(port, () => {
-    console.log(`Listening to requests at 127.0.0.1:${port}`);
+app.listen(website_port, () => {
+    console.log(`Listening to requests at 127.0.0.1:${website_port}`);
 }); 

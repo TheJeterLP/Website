@@ -1,31 +1,24 @@
 const mysql = require('mysql');
-
-const sqlhost = "127.0.0.1";
-const sqluser = "user";
-const sqlpassword = ""; 
-const sqlport = 3306;
-const sqldbname = "website";
+const { sql_enabled, sql_host, sql_user, sql_password, sql_port, sql_dbname } = require('./config.json');
 
 /**
  * Connects to a MySQL Database
- * @param {*} host hostname
- * @param {*} user username
- * @param {*} password password
- * @param {*} port port
- * @param {*} database database name
  */
 function connectToDatabase() {
+    if (!sql_enabled) {
+        return null;
+    }
     var con = mysql.createConnection({
-        host: sqlhost,
-        user: sqluser,
-        password: sqlpassword,
-        port: sqlport,
-        database: sqldbname
+        host: sql_host,
+        user: sql_user,
+        password: sql_password,
+        port: sql_port,
+        database: sql_dbname
     });
-    
-    con.connect(function(err) {
-        if(err) throw err;
-        console.log(`Connected to MySQL Database ${sqldbname} at ${sqluser}@${sqlhost}:${sqlport}`);
+
+    con.connect(function (err) {
+        if (err) throw err;
+        console.log(`Connected to MySQL Database ${sql_dbname} at ${sql_user}@${sql_host}:${sql_port}`);
     });
     return con;
 }
