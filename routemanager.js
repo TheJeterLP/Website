@@ -1,57 +1,63 @@
-function setupRoutes(app) {
-    /**
-     * Internal Sites
-     */
-    app.get('/', (req, res) => {
-        res.render('index', {title: 'Home'})
-    });
-    
-    app.get('/about', (req, res) => {
-        res.render('about', {title: 'About', age: getAge("1998/04/25")})
-    });
-    
-    app.get('/projects', (req, res) => {
-        res.render('projects', {title: 'Projects'})
-    });
-    
-    app.get('/imprint', (req, res) => {
-        res.render('imprint', {title: 'Imprint'})
-    });
-    
-    app.get('/privacy', (req, res) => {
-        res.render('privacy', {title: 'Data Protection & Privacy'})
-    });
+const fs = require('node:fs');
+const path = require('node:path');
+const logmanager = require('./logmanager.js');
+
+function loadRoutes(app) {
+    const routesPath = path.join(__dirname, 'views');
+    const routesFiles = fs.readdirSync(routesPath).filter(file => file.endsWith('.js'));
+
+    logmanager.info(`Loading views from ${routesPath}`);
+
+    for (const file of routesFiles) {
+        const filePath = path.join(routesPath, file);
+        logmanager.info(`Loading ${file}`);
+        const route = require(filePath);
+
+        let options = [];
+        options['title'] = route.title;
+
+        if (typeof route.onLoad === "function") {
+            logmanager.debug('File has declared an onLoad() function! Calling now...');
+            const variables = route.onLoad();
+            if (variables.size > 0) {
+                for (const key of variables.keys()) {
+                    const value = variables.get(key);
+                    options[key] = value;
+                    logmanager.debug(`Loaded key: ${key} as value: ${value}`);
+                }
+            }
+        }
+
+
+        app.get(route.urlpath, (req, res) => {
+            res.render(route.pugfile, options, function (err, html) {
+                logmanager.debug(`Route called: ${route.urlpath} with title: ${options.title}`);
+                if (err) {
+                    console.log(err);
+                    return;
+                }
+
+                if (typeof route.onCall === "function") {
+                    logmanager.debug('File has declared an onCall() function! Calling now...');
+                    route.onCall();
+                }
+
+                res.send(html);
+            });
+        });
+    }
 
     /**
-     * External links
-     */
-
+    * External links
+    */
     app.get('/discord', (req, res) => {
         res.redirect('https://discord.gg/42n2KxM3');
     });
-    
-    
-    
+
     //404 Error, has to be called last (after all other pages)
-    app.use(function(req,res){
-        res.status(404).render('404', {title: '404 - ' + req.path, page: req.path});
+    app.use(function (req, res) {
+        res.status(404).render('404', { title: '404 - ' + req.path, page: req.path });
     });
 }
 
-/**
- * Calculates how old the given date is at the current time.
- * @param {*} dateString format: yyyy/mm/dd
- * @returns age as simple number in yy
- */
-function getAge(dateString) {
-    var today = new Date();
-    var birthDate = new Date(dateString);
-    var age = today.getFullYear() - birthDate.getFullYear();
-    var m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-    }
-    return age;
-}
-
-module.exports = {setupRoutes};
+module.exports = { loadRoutes };

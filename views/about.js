@@ -14,4 +14,13 @@ function getAge(dateString) {
     return age;
 }
 
-module.exports = { getAge };
+module.exports = {
+    title: 'About',
+    pugfile: 'about.pug',
+    urlpath: '/about',
+    onLoad() {
+        const map = new Map();     
+        map.set('age', getAge("1998/04/25"));  
+        return map;
+    },
+}
