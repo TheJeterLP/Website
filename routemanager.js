@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const logmanager = require('./logmanager.js');
+const dbmanager = require('./dbmanager.js');
 
 /**
  * Dynamically loads backend and frontend files and loads the views.
@@ -101,18 +102,26 @@ function loadRoutes(app) {
                     throw err;
                 }
 
-                /**
-                 * Check if backend file has exported an onCall() function, if yes execute it.
-                 */
-                if (typeof route.onCall === 'function') {
-                    logmanager.debug('File has declared an onCall() function! Calling now...');
-                    route.onCall();
-                }
+                dbmanager.increaseViews(route.urlpath);
+                dbmanager.getViews(route.urlpath).then(result => {
+                    if (result == -1) {
+                        html = html.replace('<p>Views: #views</p>', '');
+                    } else {
+                        html = html.replace('#views', result);
+                    }
+                    /**
+                     * Check if backend file has exported an onCall() function, if yes execute it.
+                     */
+                    if (typeof route.onCall === 'function') {
+                        logmanager.debug('File has declared an onCall() function! Calling now...');
+                        route.onCall();
+                    }
 
-                /**
-                 * Finally send the html to the browser.
-                 */
-                res.send(html);
+                    /**
+                     * Finally send the html to the browser.
+                     */
+                    res.send(html);
+                });
             });
         });
     }
