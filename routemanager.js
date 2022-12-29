@@ -1,4 +1,7 @@
 function setupRoutes(app) {
+    /**
+     * Internal Sites
+     */
     app.get('/', (req, res) => {
         res.render('index', {title: 'Home'})
     });
@@ -17,6 +20,14 @@ function setupRoutes(app) {
     
     app.get('/privacy', (req, res) => {
         res.render('privacy', {title: 'Data Protection & Privacy'})
+    });
+
+    /**
+     * External links
+     */
+
+    app.get('/discord', (req, res) => {
+        res.redirect('https://discord.gg/42n2KxM3');
     });
     
     
