@@ -3,41 +3,42 @@ const path = require('node:path');
 const logmanager = require('./logmanager.js');
 
 function loadRoutes(app) {
-    const routesPath = path.join(__dirname, 'views');
-    const routesFiles = fs.readdirSync(routesPath).filter(file => file.endsWith('.js'));
+    const backendPath = path.join(path.join(__dirname, 'views'), 'backend');
+    const backendFiles = fs.readdirSync(backendPath).filter(file => file.endsWith('.js'));
+    const frontendPath = path.join(path.join(__dirname, 'views'), 'frontend');
 
-    logmanager.info(`Loading views from ${routesPath}`);
+    logmanager.info(`Loading views from ${backendPath}`);
 
-    for (const file of routesFiles) {
-        const filePath = path.join(routesPath, file);
+    for (const file of backendFiles) {
+        const filePath = path.join(backendPath, file);
         logmanager.info(`Loading ${file}`);
         const route = require(filePath);
 
-        if (typeof route.title !== "string") {
-            logmanager.error('title is not a string or not set! skipping File.')
+        if (typeof route.title !== 'string') {
+            logmanager.error('title is not a string or not set! skipping File.');
             continue;
         }
 
-        if (typeof route.pugfile !== "string") {
-            logmanager.error('pugfile is not a string or not set! skipping File.')
+        if (typeof route.pugfile !== 'string') {
+            logmanager.error('pugfile is not a string or not set! skipping File.');
             continue;
         }
 
-        let pugFile = path.join(routesPath, route.pugfile);
+        const pugFile = path.join(frontendPath, route.pugfile);
         if (!fs.existsSync(pugFile)) {
             logmanager.error(`The file ${route.pugfile} does not exist! skipping File.`);
             continue;
         }
 
-        if (typeof route.urlpath !== "string") {
-            logmanager.error('urlpath is not a string or not set! skipping File.')
+        if (typeof route.urlpath !== 'string') {
+            logmanager.error('urlpath is not a string or not set! skipping File.');
             continue;
         }
 
-        let options = [];
+        const options = [];
         options['title'] = route.title;
 
-        if (typeof route.onLoad === "function") {
+        if (typeof route.onLoad === 'function') {
             logmanager.debug('File has declared an onLoad() function! Calling now...');
             const variables = route.onLoad();
             if (variables.size > 0) {
@@ -58,7 +59,7 @@ function loadRoutes(app) {
                     return;
                 }
 
-                if (typeof route.onCall === "function") {
+                if (typeof route.onCall === 'function') {
                     logmanager.debug('File has declared an onCall() function! Calling now...');
                     route.onCall();
                 }
@@ -69,13 +70,13 @@ function loadRoutes(app) {
     }
 
     /**
-    * External links
+    * External links start here
     */
     app.get('/discord', (req, res) => {
         res.redirect('https://discord.gg/42n2KxM3');
     });
 
-    //404 Error, has to be called last (after all other pages)
+    // 404 Error, has to be called last (after all other pages)
     app.use(function (req, res) {
         res.status(404).render('404', { title: '404 - ' + req.path, page: req.path });
     });

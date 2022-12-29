@@ -8,12 +8,12 @@ function connectToDatabase() {
     if (!sql_enabled) {
         return null;
     }
-    var con = mysql.createConnection({
+    const con = mysql.createConnection({
         host: sql_host,
         user: sql_user,
         password: sql_password,
         port: sql_port,
-        database: sql_dbname
+        database: sql_dbname,
     });
 
     con.connect(function (err) {
