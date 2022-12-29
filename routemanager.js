@@ -3,23 +3,23 @@ function setupRoutes(app) {
      * Internal Sites
      */
     app.get('/', (req, res) => {
-        res.render('index', {title: 'Home'})
+        res.render('index', { title: 'Home' })
     });
-    
+
     app.get('/about', (req, res) => {
-        res.render('about', {title: 'About', age: getAge("1998/04/25")})
+        res.render('about', { title: 'About', age: getAge("1998/04/25") })
     });
-    
+
     app.get('/projects', (req, res) => {
-        res.render('projects', {title: 'Projects'})
+        res.render('projects', { title: 'Projects' })
     });
-    
+
     app.get('/imprint', (req, res) => {
-        res.render('imprint', {title: 'Imprint'})
+        res.render('imprint', { title: 'Imprint' })
     });
-    
+
     app.get('/privacy', (req, res) => {
-        res.render('privacy', {title: 'Data Protection & Privacy'})
+        res.render('privacy', { title: 'Data Protection & Privacy' })
     });
 
     /**
@@ -29,12 +29,12 @@ function setupRoutes(app) {
     app.get('/discord', (req, res) => {
         res.redirect('https://discord.gg/42n2KxM3');
     });
-    
-    
-    
+
+
+
     //404 Error, has to be called last (after all other pages)
-    app.use(function(req,res){
-        res.status(404).render('404', {title: '404 - ' + req.path, page: req.path});
+    app.use(function (req, res) {
+        res.status(404).render('404', { title: '404 - ' + req.path, page: req.path });
     });
 }
 
@@ -54,4 +54,4 @@ function getAge(dateString) {
     return age;
 }
 
-module.exports = {setupRoutes};
+module.exports = { setupRoutes };
