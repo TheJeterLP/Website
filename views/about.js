@@ -23,7 +23,4 @@ module.exports = {
         map.set('age', getAge("1998/04/25"));  
         return map;
     },
-    onCall() {
-        //Do stuff when site is rendered
-    }
 }

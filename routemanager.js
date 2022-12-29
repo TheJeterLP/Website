@@ -16,19 +16,32 @@ function loadRoutes(app) {
         let options = [];
         options['title'] = route.title;
 
-        const variables = route.onLoad();
-        if (variables.size > 0) {
-            for (const key of variables.keys()) {
-                const value = variables.get(key);
-                options[key] = value;
-                logmanager.debug(`Loaded key: ${key} as value: ${value}`);
+        if (typeof route.onLoad === "function") {
+            logmanager.debug('File has declared an onLoad() function! Calling now...');
+            const variables = route.onLoad();
+            if (variables.size > 0) {
+                for (const key of variables.keys()) {
+                    const value = variables.get(key);
+                    options[key] = value;
+                    logmanager.debug(`Loaded key: ${key} as value: ${value}`);
+                }
             }
         }
+
 
         app.get(route.urlpath, (req, res) => {
             res.render(route.pugfile, options, function (err, html) {
                 logmanager.debug(`Route called: ${route.urlpath} with title: ${options.title}`);
-                route.onCall();
+                if (err) {
+                    console.log(err);
+                    return;
+                }
+
+                if (typeof route.onCall === "function") {
+                    logmanager.debug('File has declared an onCall() function! Calling now...');
+                    route.onCall();
+                }
+
                 res.send(html);
             });
         });
