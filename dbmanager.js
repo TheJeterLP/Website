@@ -2,18 +2,18 @@ const mysql = require('mysql');
 const { sql_enabled, sql_host, sql_user, sql_password, sql_port, sql_dbname } = require('./config.json');
 
 /**
- * Connects to a MySQL Database
+ * Connects to a MySQL Database using credentials from config.json
  */
 function connectToDatabase() {
     if (!sql_enabled) {
         return null;
     }
-    var con = mysql.createConnection({
+    const con = mysql.createConnection({
         host: sql_host,
         user: sql_user,
         password: sql_password,
         port: sql_port,
-        database: sql_dbname
+        database: sql_dbname,
     });
 
     con.connect(function (err) {

@@ -1,10 +1,12 @@
-//server.js
-
 /**
  * Required external modules
  */
 const express = require('express');
 const path = require('path');
+
+/**
+ * Required internal modules
+ */
 const routemanager = require('./routemanager.js');
 const dbmanager = require('./dbmanager.js');
 const logmanager = require('./logmanager.js');
@@ -18,15 +20,15 @@ const app = express();
 /**
  * SQL Connection.
  */
-var conn = dbmanager.connectToDatabase();
+const conn = dbmanager.connectToDatabase();
 
 /**
  * App Configuration
  */
 app.use(express.json());
-app.set('views', path.join(__dirname, "views"));
+app.set('views', path.join(path.join(__dirname, 'views'), 'frontend'));
 app.set('view engine', 'pug');
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, 'public')));
 
 /**
  * Routes Definitions
@@ -38,4 +40,4 @@ routemanager.loadRoutes(app);
  */
 app.listen(website_port, () => {
     logmanager.info(`Listening to requests at 127.0.0.1:${website_port}`);
-}); 
+});
