@@ -20,7 +20,11 @@ const app = express();
 /**
  * SQL Connection.
  */
-const conn = dbmanager.connectToDatabase();
+try {
+    dbmanager.createTables();
+} catch (err) {
+    logmanager.error(err);
+}
 
 /**
  * App Configuration
