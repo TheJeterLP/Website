@@ -13,6 +13,27 @@ function loadRoutes(app) {
         logmanager.info(`Loading ${file}`);
         const route = require(filePath);
 
+        if (typeof route.title !== "string") {
+            logmanager.error('title is not a string or not set! skipping File.')
+            continue;
+        }
+
+        if (typeof route.pugfile !== "string") {
+            logmanager.error('pugfile is not a string or not set! skipping File.')
+            continue;
+        }
+
+        let pugFile = path.join(routesPath, route.pugfile);
+        if (!fs.existsSync(pugFile)) {
+            logmanager.error(`The file ${route.pugfile} does not exist! skipping File.`);
+            continue;
+        }
+
+        if (typeof route.urlpath !== "string") {
+            logmanager.error('urlpath is not a string or not set! skipping File.')
+            continue;
+        }
+
         let options = [];
         options['title'] = route.title;
 
