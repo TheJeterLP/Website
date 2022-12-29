@@ -98,8 +98,7 @@ function loadRoutes(app) {
             res.render(route.pugfile, options, function (err, html) {
                 logmanager.debug(`Route called: ${route.urlpath} with title: ${options.title}`);
                 if (err) {
-                    console.log(err);
-                    return;
+                    throw err;
                 }
 
                 /**
