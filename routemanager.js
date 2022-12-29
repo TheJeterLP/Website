@@ -7,7 +7,7 @@ function loadRoutes(app) {
     const backendFiles = fs.readdirSync(backendPath).filter(file => file.endsWith('.js'));
     const frontendPath = path.join(path.join(__dirname, 'views'), 'frontend');
 
-    logmanager.info(`Loading views from ${backendPath}`);
+    logmanager.info(`Loading backend files from ${backendPath}`);
 
     for (const file of backendFiles) {
         const filePath = path.join(backendPath, file);

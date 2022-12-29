@@ -17,21 +17,21 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.cookieconsent.initialise({
-    "palette": {
-        "popup": {
-            "background": "#252e39"
+    'palette': {
+        'popup': {
+            'background': '#252e39',
         },
-        "button": {
-            "background": "#14a7d0"
+        'button': {
+            'background': '#14a7d0',
         }
     },
-    "position": "top",
-    "static": true
+    'position': 'top',
+    'static': true,
 });
 
 window.onload = async function () {
-    Particles.init({ 
-        selector: '.background' ,
+    Particles.init({
+        selector: '.background',
         maxParticles: 200,
         connectParticles: true,
         responsive: [
@@ -39,19 +39,19 @@ window.onload = async function () {
               breakpoint: 768,
               options: {
                 maxParticles: 200,
-              }
+              },
             }, {
               breakpoint: 425,
               options: {
                 maxParticles: 100,
-              }
+              },
             }, {
               breakpoint: 320,
               options: {
-                maxParticles: 0
+                maxParticles: 0,
                 // disables particles.js
-              }
-            }
-          ]
+              },
+            },
+          ],
     });
 };
