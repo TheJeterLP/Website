@@ -70,7 +70,7 @@ export class DBManager {
         const [rows] = await conn.promise().query(sql, view) as any;
 
         if (typeof rows[0] === 'undefined') {
-            debug(`getViews(): View is not yet in db`);
+            debug('getViews(): View is not yet in db');
             conn.end();
             return -1;
         }
