@@ -3,7 +3,7 @@
  * @param {*} dateString format: yyyy/mm/dd
  * @returns age as simple number in yy
  */
-function getAge(dateString) {
+function getAge(dateString: string): number {
     const today = new Date();
     const birthDate = new Date(dateString);
     let age = today.getFullYear() - birthDate.getFullYear();
@@ -14,13 +14,11 @@ function getAge(dateString) {
     return age;
 }
 
-module.exports = {
-    title: 'About',
-    pugfile: 'about.pug',
-    urlpath: '/about',
-    onLoad() {
-        const map = new Map();
-        map.set('age', getAge('1998/04/25'));
-        return map;
-    },
-};
+export const title: string = 'about';
+export const pugfile: string = 'about.pug';
+export const urlpath: string = '/about';
+export function onLoad(): Map<string, any> {
+    const map = new Map<string, any>();
+    map.set('age', getAge('1998/04/25'));
+    return map;
+}

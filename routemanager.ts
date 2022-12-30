@@ -1,25 +1,26 @@
-const fs = require('fs');
-const path = require('path');
-const logmanager = require('./logmanager.js');
-const dbmanager = require('./dbmanager.js');
+import fs from 'fs';
+import path from 'path';
+import { info, error, debug } from './logmanager';
+import { DBManager } from './dbmanager';
+import { Application } from 'express';
 
 /**
  * Dynamically loads backend and frontend files and loads the views.
  * @param app
  */
-function loadRoutes(app) {
+export function loadRoutes(app: Application, db: DBManager) {
     const backendPath = path.join(path.join(__dirname, 'views'), 'backend');
-    const backendFiles = fs.readdirSync(backendPath).filter(file => file.endsWith('.js'));
+    const backendFiles = fs.readdirSync(backendPath).filter(file => file.endsWith('.ts'));
     const frontendPath = path.join(path.join(__dirname, 'views'), 'frontend');
 
-    logmanager.info(`Loading backend files from ${backendPath}`);
+    info(`Loading backend files from ${backendPath}`);
 
     /**
      * Looping through all *.js files in backend folder
      */
     for (const file of backendFiles) {
         const filePath = path.join(backendPath, file);
-        logmanager.info(`Loading ${file}`);
+        info(`Loading ${file}`);
 
         /**
          * Require the found file to import eveything inside the module.exports array
@@ -34,7 +35,7 @@ function loadRoutes(app) {
          * Check if the file has title in module.exports and if it is a string
          */
         if (typeof route.title !== 'string') {
-            logmanager.error('title is not a string or not set! skipping File.');
+            error('title is not a string or not set! skipping File.');
             continue;
         }
 
@@ -42,7 +43,7 @@ function loadRoutes(app) {
         * Check if the file has urlpath in module.exports and if it is a string
         */
         if (typeof route.urlpath !== 'string') {
-            logmanager.error('urlpath is not a string or not set! skipping File.');
+            error('urlpath is not a string or not set! skipping File.');
             continue;
         }
 
@@ -50,7 +51,7 @@ function loadRoutes(app) {
          * Check if the file has pugfile in module.exports and if it is a string
          */
         if (typeof route.pugfile !== 'string') {
-            logmanager.error('pugfile is not a string or not set! skipping File.');
+            error('pugfile is not a string or not set! skipping File.');
             continue;
         }
 
@@ -58,14 +59,14 @@ function loadRoutes(app) {
          * Check if the pugfile actually exists in the frontend directory
          */
         if (!fs.existsSync(path.join(frontendPath, route.pugfile))) {
-            logmanager.error(`The file ${route.pugfile} does not exist! skipping File.`);
+            error(`The file ${route.pugfile} does not exist! skipping File.`);
             continue;
         }
 
         /**
          * Dynamically loading options starts here
          */
-        const options = [];
+        const options: any[string] = [];
         options['title'] = route.title;
 
         /**
@@ -74,8 +75,8 @@ function loadRoutes(app) {
          * If you have no options to load, return an empty Map.
          */
         if (typeof route.onLoad === 'function') {
-            logmanager.debug('File has declared an onLoad() function! Calling now...');
-            const variables = route.onLoad();
+            debug('File has declared an onLoad() function! Calling now...');
+            const variables: Map<string, any> = route.onLoad();
             /**
              * Check if map is not empty
              */
@@ -86,7 +87,7 @@ function loadRoutes(app) {
                 for (const key of variables.keys()) {
                     const value = variables.get(key);
                     options[key] = value;
-                    logmanager.debug(`Loaded key: ${key} as value: ${value}`);
+                    debug(`Loaded key: ${key} as value: ${value}`);
                 }
             }
         }
@@ -97,15 +98,15 @@ function loadRoutes(app) {
          */
         app.get(route.urlpath, (req, res) => {
             res.render(route.pugfile, options, function (err, html) {
-                logmanager.debug(`Route called: ${route.urlpath} with title: ${options.title}`);
+                debug(`Route called: ${route.urlpath} with title: ${options.title}`);
                 if (err) {
                     throw err;
                 }
 
-                dbmanager.increaseViews(route.urlpath);
+                db.increaseViews(route.urlpath);
 
                 if (typeof route.onCall === 'function') {
-                    logmanager.debug('File has declared an onCall() function! Calling now...');
+                    debug('File has declared an onCall() function! Calling now...');
                     route.onCall();
                 }
 
@@ -129,5 +130,3 @@ function loadRoutes(app) {
         res.status(404).render('404', { title: '404 - ' + req.path, page: req.path });
     });
 }
-
-module.exports = { loadRoutes };
