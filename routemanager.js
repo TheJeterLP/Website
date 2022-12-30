@@ -103,25 +103,16 @@ function loadRoutes(app) {
                 }
 
                 dbmanager.increaseViews(route.urlpath);
-                dbmanager.getViews(route.urlpath).then(result => {
-                    if (result == -1) {
-                        html = html.replace('<p>Views: #views</p>', '');
-                    } else {
-                        html = html.replace('#views', result);
-                    }
-                    /**
-                     * Check if backend file has exported an onCall() function, if yes execute it.
-                     */
-                    if (typeof route.onCall === 'function') {
-                        logmanager.debug('File has declared an onCall() function! Calling now...');
-                        route.onCall();
-                    }
 
-                    /**
-                     * Finally send the html to the browser.
-                     */
-                    res.send(html);
-                });
+                if (typeof route.onCall === 'function') {
+                    logmanager.debug('File has declared an onCall() function! Calling now...');
+                    route.onCall();
+                }
+
+                /**
+                 * Finally send the html to the browser.
+                 */
+                res.send(html);
             });
         });
     }
