@@ -1,3 +1,3 @@
-export const title: string = 'Projects';
-export const pugfile: string = 'projects.pug';
-export const urlpath: string = '/projects';
+export const title = 'Projects';
+export const pugfile = 'projects.pug';
+export const urlpath = '/projects';

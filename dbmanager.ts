@@ -1,7 +1,7 @@
-import mysql, { Connection, RowDataPacket } from 'mysql2';
+import mysql, { Connection } from 'mysql2';
 import { debug } from './logmanager';
 
-const { sql_enabled, sql_host, sql_user, sql_password, sql_port, sql_dbname } = require('./config.json');
+import { sql_enabled, sql_host, sql_user, sql_password, sql_port, sql_dbname } from './config.json';
 
 export class DBManager {
 

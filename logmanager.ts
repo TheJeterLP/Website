@@ -1,4 +1,4 @@
-const { debug_log } = require('./config.json');
+import { debug_log } from './config.json';
 
 /**
 * If debug_log is enabled in config.json file, print out debug message to console

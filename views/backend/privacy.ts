@@ -1,3 +1,3 @@
-export const title: string = 'Data Protection & Privacy';
-export const pugfile: string = 'privacy.pug';
-export const urlpath: string = '/privacy';
+export const title = 'Data Protection & Privacy';
+export const pugfile = 'privacy.pug';
+export const urlpath = '/privacy';

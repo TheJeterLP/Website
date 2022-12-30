@@ -14,9 +14,9 @@ function getAge(dateString: string): number {
     return age;
 }
 
-export const title: string = 'about';
-export const pugfile: string = 'about.pug';
-export const urlpath: string = '/about';
+export const title = 'about';
+export const pugfile = 'about.pug';
+export const urlpath = '/about';
 export function onLoad(): Map<string, any> {
     const map = new Map<string, any>();
     map.set('age', getAge('1998/04/25'));
