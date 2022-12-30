@@ -1,9 +1,14 @@
-import mysql, { Connection, RowDataPacket } from 'mysql2';
+import mysql, { Connection } from 'mysql2';
 import { debug } from './logmanager';
 
-const { sql_enabled, sql_host, sql_user, sql_password, sql_port, sql_dbname } = require('./config.json');
+import { sql_enabled, sql_host, sql_user, sql_password, sql_port, sql_dbname } from './config.json';
 
 export class DBManager {
+
+    /**
+    * Connects to a MySQL Database using credentials from config.json
+    * Returns a MySQL Connection instance
+    */
     private getConnection(): Connection | null {
         if (!sql_enabled) {
             return null;
@@ -21,8 +26,9 @@ export class DBManager {
     }
 
     /**
- * @param {Connection} conn
- */
+     * Creates the tables in the DB if they don't already exist.
+     * @returns Promise<void>
+     */
     public async createTables(): Promise<void> {
         if (!sql_enabled) return;
         debug('Creating tables...');
@@ -32,6 +38,11 @@ export class DBManager {
         conn.end();
     }
 
+    /**
+     * Increments the page viewcounter in the database
+     * @param view pagename
+     * @returns Promise<void>
+     */
     public async increaseViews(view: string): Promise<void> {
         if (!sql_enabled) return;
         debug(`Increasing views for view ${view}`);
@@ -48,6 +59,11 @@ export class DBManager {
         conn.end();
     }
 
+    /**
+     * Inserts a not yet registered view into the database with viewcount 0
+     * @param view the page
+     * @returns Promise<void>
+     */
     private async insertViews(view: string): Promise<void> {
         if (!sql_enabled) return;
         debug(`Inserting view for view ${view}`);
@@ -63,7 +79,7 @@ export class DBManager {
      * @param {import('mysql').Connection} conn open MySQL connection
      * @returns {number} number of views, -1 if page is not yet in the database
      */
-    private async getViews(view: string): Promise<number> {
+    public async getViews(view: string): Promise<number> {
         if (!sql_enabled) return -1;
         const conn = this.getConnection()!;
         const sql = 'SELECT viewcount FROM views WHERE name = ?;';
