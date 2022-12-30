@@ -1,4 +1,4 @@
-# NodeJS-Website
+# NodeJS-Website [![Node.js CI](https://github.com/TheJeterLP/Website/actions/workflows/npm.yml/badge.svg?branch=master)](https://github.com/TheJeterLP/Website/actions/workflows/npm.yml)
 
 # First Installation
 NPM, NodeJS and PM2 need to be installed.
