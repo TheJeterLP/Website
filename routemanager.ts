@@ -25,6 +25,7 @@ export function loadRoutes(app: Application, db: DBManager) {
         /**
          * Require the found file to import eveything inside the module.exports array
          */
+
         const route = require(filePath);
 
         /**
