@@ -25,6 +25,7 @@ export function loadRoutes(app: Application, db: DBManager) {
         /**
          * Require the found file to import eveything inside the module.exports array
          */
+
         const route = require(filePath);
 
         /**
@@ -122,7 +123,7 @@ export function loadRoutes(app: Application, db: DBManager) {
     * External links start here
     */
     app.get('/discord', (req, res) => {
-        res.redirect('https://discord.gg/42n2KxM3');
+        res.redirect('https://discord.gg/JwaSHRk6bR');
     });
 
     // 404 Error, has to be called last (after all other pages)

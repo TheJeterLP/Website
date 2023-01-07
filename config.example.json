@@ -6,5 +6,6 @@
     "sql_port": 3306,
     "sql_dbname": "database",
     "website_port": 8081,
-    "debug_log": false
+    "debug_log": false,
+    "session_secret": "your_secret"
 }

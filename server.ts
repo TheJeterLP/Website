@@ -3,6 +3,7 @@
  */
 import express, { Application } from 'express';
 import path from 'path';
+import session, { MemoryStore, Session } from 'express-session';
 
 /**
  * Required internal modules
@@ -14,12 +15,13 @@ import { loadRoutes } from './routemanager';
 /**
  * Required configuration sections
  */
-import { website_port } from './config.json';
+import { website_port, session_secret } from './config.json';
 
 /**
  * App Variables
  */
 const app: Application = express();
+const oneDay = 1000 * 60 * 60 * 24;
 
 /**
  * SQL Connection.
@@ -34,6 +36,12 @@ app.use(express.json());
 app.set('views', path.join(path.join(__dirname, 'views'), 'frontend'));
 app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+    secret: session_secret,
+    saveUninitialized: true,
+    cookie: { maxAge: oneDay },
+    resave: false,
+}));
 
 /**
  * Routes Definitions
