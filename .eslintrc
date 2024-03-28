@@ -1,5 +1,6 @@
 {
     "parser": "@typescript-eslint/parser",
+	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
     "plugins": ["@typescript-eslint"],
     "rules": {
         "arrow-spacing": ["warn", { "before": true, "after": true }],
@@ -23,6 +24,7 @@
 		"no-shadow": ["error", { "allow": ["err", "resolve", "reject"] }],
 		"no-trailing-spaces": ["error"],
 		"no-var": "error",
+		"no-var-rquires": "warn",
 		"object-curly-spacing": ["error", "always"],
 		"prefer-const": "error",
 		"quotes": ["error", "single"],
