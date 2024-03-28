@@ -1,9 +1,9 @@
 {
+    "eslint.validate": ["typescript", "typescriptreact", "javascript"],
     "code-runner.customCommand": "npm run dev",
     "code-runner.clearPreviousOutput": true,
     "code-runner.showRunCommandInExplorerContextMenu": true,
     "code-runner.executorMap": {
-
         "javascript": "npm run dev",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
@@ -23,7 +23,7 @@
         "fsharp": "fsi",
         "csharp": "scriptcs",
         "vbscript": "cscript //Nologo",
-        "typescript": "ts-node",
+        "typescript": "npm run dev",
         "coffeescript": "coffee",
         "scala": "scala",
         "swift": "swift",
