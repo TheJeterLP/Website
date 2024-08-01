@@ -14,7 +14,7 @@
         "mysql2": "^3.10.2",
         "particlesjs": "^2.2.3",
         "pug": "^3.0.3",
-        "sass": "^1.72.0"
+        "sass": "^1.77.8"
     },
     "devDependencies": {
         "@types/express": "^4.17.21",
